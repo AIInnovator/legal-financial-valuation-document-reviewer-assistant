@@ -1,0 +1,5 @@
+interface:
+  display_name: Legal Financial Valuation Document Reviewer
+  short_description: Reviews and formats legal, financial, tax, CA, compliance, Registered Valuer, valuation, ESOP, Rule 11UA, and cross-border valuation documents.
+  icon: document-text
+  primary_color: "#1F4E79"
