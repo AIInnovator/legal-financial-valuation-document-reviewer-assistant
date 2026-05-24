@@ -1,8 +1,23 @@
 # Output Formats and Change Marking
 
-## Always Ask Output Format
+> Purpose: Canonical output format choices, DOCX fallback behavior, and strict bracket notation rules.
+> Load when: The user must choose output format, asks for Markdown annotations, asks for change-marked output, or requests DOCX.
 
-Before final output, ask:
+> Final output rule: see `SKILL.md` - `Final Output Safety`.
+
+## Contents
+
+- Output format options
+- Version type options
+- Strict bracket separation
+- Formatting annotation rules
+- Change-marked Markdown rules
+- DOCX output fallback
+- Examples
+
+## Output Format Options
+
+Ask only if the user has not already specified the output format:
 
 Which output format would you like?
 
@@ -16,9 +31,11 @@ G. Both Word-ready text and Markdown
 
 Do not assume the user wants Word output.
 
-## Always Ask Version Type
+Do not offer DOCX if the `docx` skill is unavailable. Substitute Word-ready text and say: "DOCX file output requires the docx skill. I can provide Word-ready text instead."
 
-Ask:
+## Version Type Options
+
+Ask only if the user has not already specified version type:
 
 Which version type do you want?
 
@@ -26,24 +43,30 @@ A. Clean final version only
 B. Change-marked version only  
 C. Both clean final version and change-marked version  
 
+## Strict Bracket Separation
+
+Use bracket notation strictly:
+
+- `{}` is reserved only for formatting annotations.
+- `[]` is reserved only for approved text changes in change-marked output.
+- Do not use `{}` to show text changes.
+- Do not use `[]` for formatting instructions.
+- Use both systems together only if the user explicitly asks for both formatting annotations and change-marked text.
+- Do not invent inline formatting tags.
+
 ## Markdown with Detailed Formatting Tags
 
 If the user chooses Markdown with formatting annotations, use curly brackets `{}` only for formatting instructions.
 
-Use detailed tags.
-
-Examples:
+Use detailed tags such as:
 
 - `{Document Title: Bold, Center Aligned, 16 pt, All Caps}`
 - `{Heading 1: Bold, Left Aligned, 14 pt, Before Spacing 12 pt, After Spacing 6 pt}`
 - `{Heading 2: Bold, Left Aligned, 12 pt, Numbered}`
 - `{Body Paragraph: Justified, 11 pt, 1.15 Line Spacing}`
-- `{Defined Term: Bold}`
 - `{Important Date: Bold}`
 - `{Important Amount: Bold}`
 - `{Valuation Conclusion: Bold, Boxed, Light Grey Shading}`
-- `{Legal Warning: Bold, Text Color Red}`
-- `{Note: Italic, Light Grey Shading}`
 - `{Table: Clean Borders, Header Row Bold, Header Row Shaded, Amounts Right Aligned}`
 - `{Clause: Numbered, Hanging Indent}`
 - `{Sub-Clause: Lowercase Alphabetical Numbering, Indented}`
@@ -64,11 +87,11 @@ The report was issue on 12 March 2024.
 After:
 The report was [issued] on 12 March 2024.
 
-Do not use `[]` for formatting instructions.
-
 If a change involves deletion, mention the deletion in the change summary instead of silently hiding it.
 
 ## DOCX Output
+
+This output option requires the `docx` skill. If the `docx` skill is not available, do not offer DOCX as an output option. Offer Word-ready text or Markdown instead.
 
 If the user chooses DOCX output:
 
@@ -79,10 +102,46 @@ If the user chooses DOCX output:
    - Separate change summary
    - Optional change-marked text version if the user requested it
 
-For DOCX change-marked output, avoid inserting awkward visible brackets inside the document unless the user specifically asks for visible bracket markings.
+For DOCX change-marked output, avoid inserting visible brackets inside the document unless the user specifically asks for visible bracket markings.
 
-## Final Document Rule
+## Examples
 
-Do not insert generic legal, tax, finance, valuation, source-verification, or professional-review warnings inside the final formatted document unless the user explicitly asks.
+### Formatting Annotations Only
 
-Concerns may be mentioned in the review stage, not embedded into the final document.
+Input:
+
+```text
+Agreement
+This agreement is made on 1 January 2024 between ABC Private Limited and XYZ Limited.
+```
+
+Output:
+
+```markdown
+{Document Title: Bold, Center Aligned, 16 pt, All Caps}
+AGREEMENT
+
+{Body Paragraph: Justified, 11 pt, 1.15 Line Spacing}
+This agreement is made on 1 January 2024 between ABC Private Limited and XYZ Limited.
+```
+
+### Change-Marked Text Only
+
+Input:
+
+```text
+The report was issue on 12 March 2024.
+```
+
+Output:
+
+```markdown
+The report was [issued] on 12 March 2024.
+```
+
+### Combined Output Only When Explicitly Requested
+
+```markdown
+{Body Paragraph: Justified, 11 pt, 1.15 Line Spacing}
+The report was [issued] on 12 March 2024.
+```

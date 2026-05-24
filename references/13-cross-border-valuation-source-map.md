@@ -1,6 +1,21 @@
 # Cross-Border Valuation Source Map
 
-Use this file when the document involves Singapore, United States, United Arab Emirates, overseas companies, foreign subsidiaries, foreign shareholders, cross-border share issue, ESOPs for foreign employees, foreign investment, FEMA, ODI, FDI, transfer pricing, or international valuation context.
+> Purpose: Jurisdiction source map for Singapore, United States, UAE, multi-jurisdiction, FEMA/ODI/FDI, foreign shareholder, and international valuation contexts.
+> Load when: The document involves Singapore, US, UAE, overseas companies, foreign subsidiaries, foreign shareholders, cross-border share issue, ESOPs for foreign employees, foreign investment, FEMA, ODI, FDI, transfer pricing, or international valuation context.
+
+> Apply `12-source-verification-standard.md` for general source verification. For cross-border matters, prefer jurisdiction-specific official sources listed below.
+> Final output rule: see `SKILL.md` - `Final Output Safety`.
+
+## Contents
+
+- Jurisdiction rule
+- India cross-border context
+- Singapore context
+- United States context
+- UAE context
+- Multi-jurisdiction review
+- Source verification pointer
+- Review output
 
 ## Jurisdiction Rule
 
@@ -127,11 +142,7 @@ For multi-jurisdiction documents:
 
 ## Source Verification Rule
 
-Where possible, verify important cross-border legal, tax, or valuation points using at least two reputed sources.
-
-At least one source should preferably be official, regulatory, statutory, or professional-institute level.
-
-One official source may be sufficient if it directly answers the point.
+Apply the standard from `12-source-verification-standard.md`. For cross-border matters, prefer jurisdiction-specific official sources as listed in the sections above.
 
 ## Review Output
 
@@ -146,9 +157,3 @@ For cross-border issues, show:
 - Possible better reference, only if verified
 - Suggested clarification or wording
 - Approval required before changing document
-
-## Final Document Rule
-
-Do not insert jurisdiction/source verification comments into the final formatted document unless the user asks.
-
-Keep them in the review stage only.

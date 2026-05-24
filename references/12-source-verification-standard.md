@@ -1,6 +1,21 @@
 # Source Verification Standard
 
-Use this file whenever the document contains legal, tax, accounting, audit, compliance, valuation, Registered Valuer, ESOP, company law, regulatory, statutory, or professional references that need verification.
+> Purpose: Canonical source verification standard for legal, tax, accounting, audit, compliance, valuation, company law, regulatory, statutory, and professional references.
+> Load when: Any legal, tax, accounting, audit, compliance, valuation, RV, ESOP, company law, regulatory, statutory, or professional reference requires verification.
+
+> Final output rule: see `SKILL.md` - `Final Output Safety`.
+
+## Contents
+
+- Verification standard
+- Source hierarchy
+- Two-source rule
+- One-source exception
+- Current law rule
+- Section fit rule
+- Alternative reference rule
+- Cautious language rule
+- Review output
 
 ## Verification Standard
 
@@ -75,7 +90,7 @@ If not verified, do not suggest a specific alternative as if it is correct.
 
 Instead, say:
 
-“The cited reference should be verified further because the available facts do not clearly establish its applicability.”
+"The cited reference should be verified further because the available facts do not clearly establish its applicability."
 
 ## Cautious Language Rule
 
@@ -83,21 +98,21 @@ Do not overstate.
 
 Use:
 
-- “appears relevant”
-- “may be relevant if”
-- “should be verified because”
-- “the document should clarify”
-- “possible reference to verify”
-- “based on the available text”
-- “subject to applicable facts and current law”
+- "appears relevant"
+- "may be relevant if"
+- "should be verified because"
+- "the document should clarify"
+- "possible reference to verify"
+- "based on the available text"
+- "subject to applicable facts and current law"
 
 Avoid:
 
-- “definitely wrong”
-- “invalid”
-- “not applicable”
-- “no section fits”
-- “this cannot be used”
+- "definitely wrong"
+- "invalid"
+- "not applicable"
+- "no section fits"
+- "this cannot be used"
 
 ## Review Output
 
@@ -112,9 +127,3 @@ For each verified or potentially problematic reference, show:
 - Possible better reference, only if verified
 - Suggested action
 - Approval required before changing document
-
-## Final Output Rule
-
-Do not put source verification discussion into the final formatted document unless the user specifically asks.
-
-Keep it in the issue review or change summary only.

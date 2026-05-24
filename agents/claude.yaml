@@ -3,3 +3,11 @@ interface:
   short_description: "Review legal and valuation documents."
   default_prompt: "Use $legal-financial-valuation-document-reviewer-assistant to review this valuation document and prepare approved edits."
   brand_color: "#1F4E79"
+
+dependencies:
+  tools:
+    - web_search
+  skills:
+    - docx
+
+platform: claude

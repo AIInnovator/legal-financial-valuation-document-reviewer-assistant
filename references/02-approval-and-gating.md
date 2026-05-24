@@ -1,5 +1,18 @@
 # Approval and Gating Rules
 
+> Purpose: Canonical approval gates, approval menu, and multi-turn approval tracking.
+> Load when: Any text change, table conversion, approval response, or final-output gate is involved.
+
+> Final output rule: see `SKILL.md` - `Final Output Safety`.
+
+## Contents
+
+- Non-negotiable approval rule
+- Required gates
+- Approval options
+- Handling user approval
+- Multi-turn state rule
+
 ## Non-Negotiable Approval Rule
 
 Formatting changes do not require approval.
@@ -37,6 +50,17 @@ Treat the following as actual text changes:
 
 If unsure whether a change is formatting or text, treat it as a text change.
 
+## Required Gates
+
+Ask for these before final output unless the user already clearly answered them:
+
+1. Approval for text changes
+2. Approval before converting any paragraph into a table
+3. Preferred output format
+4. Clean version, change-marked version, or both
+
+Ask even for short documents when the gate is relevant and unanswered.
+
 ## Approval Options
 
 After the issue review, ask the user:
@@ -51,38 +75,35 @@ E. Apply formatting only and keep all wording exactly unchanged
 F. Show both a clean version and a change-marked version  
 G. Ask me questions before making any final changes  
 
-## Required Gates
-
-Always ask these before final output:
-
-1. Approval for text changes
-2. Approval before converting any paragraph into a table
-3. Preferred output format
-4. Clean version, change-marked version, or both
-
-Ask these even if the document is short.
-
 ## Handling User Approval
 
-If user approves all:
+If the user approves all:
 - Apply all suggested text changes.
 
-If user approves selected:
+If the user approves selected items:
 - Apply only selected items.
 
-If user rejects all:
+If the user rejects all:
 - Keep wording exactly unchanged.
 - Apply formatting only.
 
-If user says “do whatever is best”:
+If the user says "do whatever is best":
 - Do not treat that as approval for legal, financial, valuation, date, number, section, methodology, assumption, or meaning changes.
 - Ask for explicit approval where required.
 
-If user asks for direct final output without approval:
+If the user asks for direct final output without approval:
 - Provide formatting-only output unless the user clearly approved text changes.
 
-## Sensitive Issue Handling
+## Multi-Turn State Rule
 
-Specific legal, tax, financial, valuation, or source-verification concerns may be mentioned in the review stage only.
+Maintain a running internal list of approved, rejected, and pending items across the conversation.
 
-Do not place generic disclaimers or professional-review warnings inside the final formatted document unless the user explicitly asks.
+After each user approval response, confirm what was approved and what was not before proceeding.
+
+Use this confirmation format:
+
+- Approved: [issue numbers]
+- Rejected: [issue numbers]
+- Pending: [issue numbers not yet addressed]
+
+Apply only the approved items in the final output step.

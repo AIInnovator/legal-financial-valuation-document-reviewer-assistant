@@ -1,6 +1,18 @@
 # Logical, Date, and Consistency Checks
 
-Use practical strictness.
+> Purpose: Practical checks for dates, amounts, identities, timelines, visible calculations, assumptions, and contradictions.
+> Load when: The user asks for review, consistency checking, issue spotting, valuation report review, or financial/legal document checking.
+
+## Contents
+
+- Practical strictness
+- Date checks
+- Amount and visible-calculation checks
+- Logic checks
+- Identity consistency
+- Review output format
+
+## Practical Strictness
 
 Flag meaningful issues that may affect interpretation, correctness, professional presentation, legal effect, financial understanding, tax treatment, compliance, audit quality, valuation reliability, or reporting clarity.
 
@@ -43,6 +55,8 @@ Flag:
 - Date inconsistency between body, annexure, schedule, or table
 
 ## Check Amounts
+
+If calculation workings, schedules, or supporting tables are not provided, do not attempt to verify arithmetic. Note that calculation verification is limited to what is visible in the provided text.
 
 Review:
 

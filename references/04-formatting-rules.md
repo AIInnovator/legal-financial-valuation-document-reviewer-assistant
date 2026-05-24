@@ -1,5 +1,8 @@
 # Formatting Rules
 
+> Purpose: Professional formatting rules for legal, financial, audit, tax, compliance, valuation, RV, and CA-practice documents.
+> Load when: Formatting is requested or a full review needs formatting recommendations.
+
 Apply formatting automatically if it does not alter text, meaning, figures, dates, legal effect, valuation conclusion, assumptions, methods, or financial substance.
 
 ## General Formatting

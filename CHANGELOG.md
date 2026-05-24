@@ -1,10 +1,29 @@
 # Changelog
 
-All notable changes to this Skill will be documented in this file.
+All notable changes to this skill package will be documented in this file.
+
+## [1.1.0] - 2026-05-24
+
+### Changed
+
+- Renamed runtime skill folder to `legal-financial-valuation-document-reviewer-assistant`.
+- Removed nonstandard `compatibility` frontmatter from `SKILL.md`; compatibility now lives in `MANIFEST.md`.
+- Rewrote trigger description to a concise `Use when...` form.
+- Added formatting-only fast path.
+- Added long-document handling.
+- Added stop-loading guidance for references.
+- Deduplicated approval, output, source verification, and final-output safety rules.
+- Added multi-turn approved/rejected/pending state tracking.
+- Added strict bracket notation: `{}` for formatting annotations only and `[]` for approved text changes only.
+- Added purpose/load headers to references.
+- Added visible-workings caveat for amount/calculation checks.
+- Updated OpenAI and Claude metadata.
+- Fixed mojibake in package files.
 
 ## [1.0.0] - 2026-05-24
 
 ### Added
+
 - Initial release of `legal-financial-valuation-document-reviewer-assistant`.
 - Added approval-controlled document review workflow.
 - Added support for legal, financial, tax, audit, compliance, Chartered Accountant, Registered Valuer, and valuation documents.

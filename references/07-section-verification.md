@@ -1,5 +1,22 @@
 # Section, Rule, Law, Circular, Notification, Standard, and Valuation Reference Verification
 
+> Purpose: Canonical section/reference fit checks and cautious wording for statutory, regulatory, professional-standard, and valuation references.
+> Load when: The document mentions any law, section, rule, regulation, circular, notification, case law, accounting/auditing standard, valuation standard, IBBI/RV reference, Rule 11U/11UA, ESOP valuation, FEMA, RBI, SEBI, MCA, GST, or tax reference.
+
+> Final output rule: see `SKILL.md` - `Final Output Safety`.
+
+## Contents
+
+- References covered
+- Verification requirement
+- Jurisdiction handling
+- Section fit assessment
+- Important wording rule
+- No unsupported substitution
+- Review output
+
+## References Covered
+
 Use this file whenever the document mentions any:
 
 - Legal section
@@ -30,6 +47,8 @@ Use this file whenever the document mentions any:
 ## Verification Requirement
 
 When online browsing or official source access is available, search and verify whether the mentioned section/reference appears relevant to the document context.
+
+Use the source verification standard in `12-source-verification-standard.md`.
 
 Prefer official or authoritative sources, such as:
 
@@ -67,20 +86,20 @@ When a section is mentioned, check:
 
 Do not say:
 
-“This section will not fit, but I do not know what else fits.”
+"This section will not fit, but I do not know what else fits."
 
 Instead, say something more useful and careful:
 
-- “The cited section should be verified because the current wording/facts do not clearly show why this section applies.”
-- “Based on the available text, this section may be relevant if [condition] is true.”
-- “If the intended issue is [X], possible references to verify may include [Y], subject to the applicable law and facts.”
-- “I could not confirm a better section from the available information; please provide the exact legal/tax/valuation context or jurisdiction for a more precise review.”
+- "The cited section should be verified because the current wording/facts do not clearly show why this section applies."
+- "Based on the available text, this section may be relevant if [condition] is true."
+- "If the intended issue is [X], possible references to verify may include [Y], subject to the applicable law and facts."
+- "I could not confirm a better section from the available information; please provide the exact legal/tax/valuation context or jurisdiction for a more precise review."
 
 ## No Unsupported Legal Substitution
 
 Do not replace one statutory section, rule, standard, or valuation reference with another unless:
 
-1. The user approves the change, and
+1. The user approves the change.
 2. The replacement is supported by reliable verification or clear user-provided context.
 
 ## Review Output for Section Issues
@@ -95,9 +114,3 @@ For every section/reference issue, show:
 - Possible better reference, only if found and supported
 - Suggested action
 - Approval required before changing the document
-
-## Final Document Rule
-
-Do not insert section-verification commentary into the final document unless the user asks.
-
-Keep verification notes in the issue review or change summary only.

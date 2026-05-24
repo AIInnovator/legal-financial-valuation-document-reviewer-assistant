@@ -1,6 +1,9 @@
 # CA, Legal, Financial, Tax, Audit, Compliance, and Valuation Sensitivity
 
-Use this file for Chartered Accountant practice documents, legal agreements, financial reports, audit observations, tax notes, compliance drafts, due diligence reports, regulatory documents, valuation reports, and Registered Valuer documents.
+> Purpose: Sensitivity rules for professional wording in CA, legal, financial, tax, audit, compliance, and valuation documents.
+> Load when: The document includes legal rights, tax positions, audit observations, valuation assumptions, professional conclusions, or CA/RV practice content.
+
+> Final output rule: see `SKILL.md` - `Final Output Safety`.
 
 ## Sensitive Areas
 
@@ -52,7 +55,7 @@ Instead:
 2. Explain why it matters.
 3. Suggest wording if appropriate.
 4. Ask for approval before applying.
-5. Do not insert professional-review warnings inside the final document.
+5. Keep professional-review concerns out of the final document unless the user asks.
 
 ## Chartered Accountant and Valuation Context
 
@@ -88,11 +91,9 @@ Do not say that a position is wrong unless it is clearly wrong from the document
 
 Use careful language:
 
-- “This may require verification.”
-- “This appears inconsistent with...”
-- “The wording may create ambiguity because...”
-- “The section reference should be verified against the applicable law and facts.”
-- “A more suitable reference may be considered if supported by the facts and applicable law.”
-- “The valuation assumption may require clearer support because...”
-
-Do not insert such comments into the final formatted document unless requested.
+- "This may require verification."
+- "This appears inconsistent with..."
+- "The wording may create ambiguity because..."
+- "The section reference should be verified against the applicable law and facts."
+- "A more suitable reference may be considered if supported by the facts and applicable law."
+- "The valuation assumption may require clearer support because..."

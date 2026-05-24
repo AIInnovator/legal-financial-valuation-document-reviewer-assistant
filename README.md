@@ -1,43 +1,40 @@
 # Legal Financial Valuation Document Reviewer Assistant
 
-This Skill reviews, formats, and prepares legal, financial, audit, tax, compliance, Chartered Accountant, Registered Valuer, valuation, ESOP, Rule 11UA, Companies Act, IBBI, FEMA, and cross-border valuation documents.
+This skill reviews, formats, and prepares legal, financial, audit, tax, compliance, Chartered Accountant, Registered Valuer, valuation, ESOP, Rule 11UA, Companies Act, IBBI, FEMA, and cross-border valuation documents.
 
 ## Purpose
 
-The Skill is designed for professional document review workflows where wording, legal intent, financial figures, valuation assumptions, dates, regulatory references, and output format must be controlled carefully.
+Use it for professional document review workflows where wording, legal intent, financial figures, valuation assumptions, dates, regulatory references, and output format must be controlled carefully.
 
-It follows an approval-first workflow:
+## Core Workflow
 
-1. Review the document.
-2. Present a detailed issue-by-issue review.
-3. Ask for approval before applying any wording/text change.
-4. Ask for output format every time.
-5. Ask whether the user wants a clean version, change-marked version, or both.
-6. Ask before converting paragraphs into tables.
-7. Apply only approved text changes.
-8. Provide the final document and change summary.
+The skill follows an approval-first workflow:
 
-## Key Capabilities
+1. Classify the document and load only relevant references.
+2. Review the document before formatting.
+3. Present issue-by-issue findings.
+4. Ask for approval before applying any text change.
+5. Ask for missing output/version/table-conversion gates.
+6. Apply only approved changes.
+7. Provide final output and a change summary.
 
-- Legal and financial report formatting
-- Spell-checking and wording suggestions
-- Logical, consistency, amount, date, and timeline review
-- Numbering and cross-reference review
-- CA, tax, audit, compliance, and company law sensitivity checks
-- Registered Valuer and valuation report review
-- ESOP, Rule 11UA, FEMA/RBI, Companies Act, IBBI, and cross-border valuation review
-- Source verification from authoritative or reputed sources
-- Word-ready, Markdown, annotated Markdown, change-marked Markdown, and DOCX-oriented output workflows
-- Claude-compatible portable prompt included in `references/claude-compatible-prompt.md`
+Formatting-only requests use a fast path and do not require a full issue review.
+
+## Compatibility
+
+- Web search is required for source verification.
+- The `docx` skill is required for actual `.docx` output.
+- Without those dependencies, the skill still supports review, formatting, Word-ready text, and Markdown output.
+- Compatibility details are documented in `MANIFEST.md`, not `SKILL.md` frontmatter.
+
+## Strict Bracket Notation
+
+- `{}` is reserved only for formatting annotations.
+- `[]` is reserved only for approved text changes in change-marked output.
+- Both systems may be used together only when the user explicitly asks for both formatting annotations and change-marked text.
 
 ## File Design
 
-`SKILL.md` is intentionally compact and acts as the control plane. Detailed instructions are split into one-level reference files under `references/` so the assistant loads only the instruction set needed for the current task.
+`SKILL.md` is the control plane. Detailed instructions are split into one-level reference files under `references/` so the assistant can load only what the current task needs.
 
-## Important Production Rules
-
-- Do not apply actual text changes without approval.
-- Do not add generic disclaimers inside final documents.
-- Keep legal, tax, financial, valuation, and source-verification comments in the review stage unless the user asks to include them in the final document.
-- Verify important references using authoritative or reputed sources where possible.
-- Suggest alternative statutory or regulatory references only when verified.
+Each reference starts with `Purpose` and `Load when` lines for faster routing.

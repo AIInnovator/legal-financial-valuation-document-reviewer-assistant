@@ -1,5 +1,21 @@
 # Detailed Issue-by-Issue Review Template
 
+> Purpose: Standard issue-review structure to use before approval and final formatting.
+> Load when: The user requests full review, issue spotting, redlining, corrections, or final preparation after review.
+
+## Contents
+
+- Review summary
+- Structural and formatting issues
+- Spelling, grammar, and wording suggestions
+- Logical, consistency, date, and amount issues
+- Numbering and cross-reference issues
+- Legal, financial, tax, audit, compliance, or CA-practice concerns
+- Valuation, Registered Valuer, ESOP, and methodology issues
+- Section/rule/source verification issues
+- Table conversion suggestions
+- After-review gates
+
 Use this template before asking for approval and before final formatting.
 
 ## Review Summary
@@ -26,7 +42,7 @@ For each issue:
 - Approval required: No, if formatting only. Yes, if wording/structure changes.
 
 If no issue:
-“No material issue identified.”
+"No material issue identified."
 
 ## B. Spelling, Grammar, and Wording Suggestions
 
@@ -40,7 +56,7 @@ For each issue:
 - Approval required: Yes
 
 If no issue:
-“No material issue identified.”
+"No material issue identified."
 
 ## C. Logical, Consistency, Date, and Amount Issues
 
@@ -54,7 +70,7 @@ For each issue:
 - Approval required: Yes
 
 If no issue:
-“No material issue identified.”
+"No material issue identified."
 
 ## D. Numbering and Cross-Reference Issues
 
@@ -68,7 +84,7 @@ For each issue:
 - Approval required: Yes
 
 If no issue:
-“No material issue identified.”
+"No material issue identified."
 
 ## E. Legal, Financial, Tax, Audit, Compliance, or CA-Practice Concerns
 
@@ -84,7 +100,7 @@ For each issue:
 Do not include a generic disclaimer.
 
 If no issue:
-“No material issue identified.”
+"No material issue identified."
 
 ## F. Valuation, Registered Valuer, ESOP, and Methodology Issues
 
@@ -103,7 +119,7 @@ For each issue:
 - Approval required: Yes
 
 If no issue:
-“No material issue identified.”
+"No material issue identified."
 
 ## G. Section, Rule, Circular, Notification, Standard, or Valuation Reference Verification
 
@@ -121,7 +137,7 @@ For each issue:
 - Approval required: Yes
 
 If no issue:
-“No material issue identified.”
+"No material issue identified."
 
 ## H. Table Conversion Suggestions
 
@@ -134,38 +150,10 @@ For each suggestion:
 - Approval required: Yes
 
 If no table conversion is useful:
-“No material table conversion suggestion identified.”
+"No material table conversion suggestion identified."
 
-## Approval Request
+## After Review
 
-After the review, ask:
+Ask for approval using `02-approval-and-gating.md`.
 
-Please choose how you want me to proceed:
-
-A. Approve all suggested text changes and corrections  
-B. Approve only selected changes  
-C. Reject all text changes and format original text only  
-D. Fix only spelling and grammar, but do not rephrase legal, financial, or valuation wording  
-E. Apply formatting only and keep all wording exactly unchanged  
-F. Show both a clean version and a change-marked version  
-G. Ask me questions before making any final changes  
-
-Then ask:
-
-Which output format would you like?
-
-A. Word-ready format  
-B. Markdown format  
-C. Markdown with detailed formatting annotations using `{}`  
-D. Change-marked Markdown using `[]`  
-E. DOCX file  
-F. Both clean version and change-marked version  
-G. Both Word-ready text and Markdown  
-
-Then ask:
-
-Which version type do you want?
-
-A. Clean final version only  
-B. Change-marked version only  
-C. Both clean final version and change-marked version  
+Ask for output format and version type using `03-output-formats-and-change-marking.md`.

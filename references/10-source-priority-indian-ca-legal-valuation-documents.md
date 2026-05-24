@@ -1,12 +1,23 @@
 # Source Priority for Indian CA, Legal, Tax, Compliance, and Valuation Documents
 
-Use this file when the document appears connected to Indian legal, tax, audit, accounting, company law, compliance, Chartered Accountant practice, Registered Valuer practice, ESOP valuation, share valuation, business valuation, securities valuation, FEMA valuation, Rule 11UA, or regulatory valuation work.
+> Purpose: Indian-source priority map for CA, legal, tax, audit, company law, IBBI, Registered Valuer, ESOP, Rule 11UA, FEMA, and valuation work.
+> Load when: The document appears connected to Indian legal, tax, audit, accounting, company law, compliance, CA practice, RV practice, ESOP, share valuation, business valuation, FEMA valuation, Rule 11UA, or regulatory valuation work.
 
-## Preferred Source Priority
+> This file extends `12-source-verification-standard.md` for Indian context. Load file `12` first for general standards when source verification is required, then use this file for Indian-specific source priority.
+> Section verification language: use `07-section-verification.md` - `Important Wording Rule`.
+> Final output rule: see `SKILL.md` - `Final Output Safety`.
 
-Prefer primary and authoritative sources over normal search results.
+## Contents
 
-Use sources in this order:
+- Indian source priority
+- Normal search restriction
+- Common Indian CA, legal, and tax areas
+- Common valuation areas
+- Section verification language pointer
+
+## Indian Source Priority
+
+For Indian legal, tax, compliance, valuation, or CA-practice conclusions, prefer sources in this order:
 
 1. Official statute, rule, notification, circular, regulation, or government portal
 2. Official regulator or authority material
@@ -15,8 +26,8 @@ Use sources in this order:
 5. Income Tax Department material for Income-tax Act, Income-tax Rules, Rule 11UA, Rule 11U, tax valuation, TDS/TCS, forms, and notices
 6. ICAI material for accounting, audit, assurance, ethics, valuation-related guidance, financial reporting, and CA-practice matters
 7. CBIC/GST portal for GST law, rules, notifications, circulars, and returns
-8. RBI for FEMA, FDI, ODI, foreign exchange, pricing guidelines, NBFC, banking, and cross-border valuation matters
-9. SEBI for listed entities, securities, ICDR, LODR, merchant banker, preferential issue, ESOP, takeover, and market-related valuation matters
+8. RBI material for FEMA, FDI, ODI, foreign exchange, pricing guidelines, NBFC, banking, and cross-border valuation matters
+9. SEBI material for listed entities, securities, ICDR, LODR, merchant banker, preferential issue, ESOP, takeover, and market-related valuation matters
 10. Reported case law from reliable court, tribunal, or recognized legal database sources
 11. Recognized professional commentary, reputed tax publishers, reputed valuation bodies, or established professional firms as secondary support only
 
@@ -26,21 +37,7 @@ Do not rely on casual blogs, SEO articles, random summaries, unsourced web pages
 
 If secondary sources are used, prefer reputed and professional sources.
 
-## Two-Source Verification Standard
-
-Where possible, verify important legal, tax, compliance, valuation, or section-related conclusions using at least two reliable sources.
-
-Preferred combinations:
-
-- One official source plus one reputed professional source
-- One statutory source plus one regulator source
-- One regulator source plus one professional standard
-- One official circular/notification plus one reputed interpretation source
-- Two official/regulatory sources where the issue crosses multiple laws
-
-If one official source is directly authoritative and fully answers the issue, it may be sufficient, but treat it as the primary source and say so in the review stage.
-
-If sources conflict, do not choose casually. Flag the conflict in the review stage.
+Apply the two-source and one-source exception rules from `12-source-verification-standard.md`.
 
 ## Common Indian CA, Legal, and Tax Areas
 
@@ -129,26 +126,4 @@ Check carefully when documents mention:
 
 ## Section Verification Language
 
-Use careful language.
-
-Preferred wording:
-
-- “The cited section appears relevant if the underlying facts involve [condition].”
-- “The document should clarify [fact] to support use of this section.”
-- “Another reference may be more suitable if the intended issue is [issue], but this should be verified against the applicable facts and current law.”
-- “The cited reference should be verified because the available facts do not clearly show why it applies.”
-- “Based on the available text, the reference may be relevant, but the factual basis should be made clearer.”
-
-Avoid:
-
-- “This section is wrong.”
-- “This section does not fit.”
-- “No section fits.”
-- “This is definitely invalid.”
-- “This is legally incorrect.”
-
-## Final Document Rule
-
-Do not insert source-verification notes into the final document unless the user asks.
-
-Keep source-verification notes in the issue review or change summary only.
+Use the wording standard in `07-section-verification.md` - `Important Wording Rule`.

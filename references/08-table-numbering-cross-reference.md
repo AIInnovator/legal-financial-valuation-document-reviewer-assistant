@@ -1,5 +1,17 @@
 # Table Conversion, Numbering, and Cross-Reference Rules
 
+> Purpose: Rules for table conversion approval, existing table formatting, visible calculation checks, numbering, and cross-reference review.
+> Load when: The document has tables, paragraphs that may become tables, clause/section numbering, annexures, schedules, or cross-references.
+
+## Contents
+
+- Table conversion rule
+- Existing table formatting
+- Mathematical consistency in tables
+- Numbering review
+- Cross-reference review
+- Numbering issue output
+
 ## Table Conversion Rule
 
 Ask before converting any paragraph into a table.
@@ -93,15 +105,15 @@ Do not correct numbering without approval.
 
 Check references such as:
 
-- “Clause 3”
-- “Section 2”
-- “Annexure A”
-- “Schedule I”
-- “Table 4”
-- “Para 7”
-- “Above-mentioned”
-- “Hereinafter”
-- “As stated below”
+- "Clause 3"
+- "Section 2"
+- "Annexure A"
+- "Schedule I"
+- "Table 4"
+- "Para 7"
+- "Above-mentioned"
+- "Hereinafter"
+- "As stated below"
 
 Flag if the referenced item is missing, unclear, duplicated, or inconsistent.
 

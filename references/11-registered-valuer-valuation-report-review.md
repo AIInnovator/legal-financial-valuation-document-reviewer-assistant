@@ -1,28 +1,25 @@
 # Registered Valuer and Valuation Report Review
 
-Use this file when the document is or appears to include:
+> Purpose: Specialized checklist for valuation reports, RV reports, ESOP, Rule 11UA, DCF, NAV, FEMA/RBI valuation, Companies Act valuation, and option valuation.
+> Load when: The document is or appears to include a valuation report, Registered Valuer report, ESOP valuation, Rule 11UA valuation, share/business/securities valuation, DCF/NAV, FEMA valuation, Companies Act valuation, IBBI/RV-related work, or option valuation.
 
-- Registered Valuer report
-- Valuation report
-- ESOP valuation
-- Rule 11UA valuation
-- Share valuation
-- Business valuation
-- Securities valuation
-- Convertible instrument valuation
-- Preference share valuation
-- Equity share valuation
-- FEMA valuation
-- Companies Act valuation
-- IBBI/RV-related valuation
-- Merchant banker valuation
-- DCF valuation
-- NAV valuation
-- Fair market value report
-- Fair value report
-- Startup valuation report
-- Option valuation report
-- Cross-border valuation report
+> For source verification, use `12-source-verification-standard.md`. For Indian source priority, use `10-source-priority-indian-ca-legal-valuation-documents.md`. For cross-border context, use `13-cross-border-valuation-source-map.md`.
+> Final output rule: see `SKILL.md` - `Final Output Safety`.
+
+## Contents
+
+- Review objective
+- Key valuation report checks
+- Calculation review rule
+- Method review
+- ESOP valuation review
+- Rule 11UA / tax valuation review
+- FEMA / RBI valuation review
+- Companies Act / IBBI / Registered Valuer review
+- Assumption and projection review
+- Date and version consistency
+- Jurisdiction sensitivity
+- Output for valuation issues
 
 ## Review Objective
 
@@ -152,7 +149,7 @@ When Rule 11UA, Rule 11U, or similar tax valuation reference is mentioned:
 
 Use careful wording:
 
-“The Rule 11UA reference should be verified against the exact nature of the security, transaction, valuation date, and purpose of valuation.”
+"The Rule 11UA reference should be verified against the exact nature of the security, transaction, valuation date, and purpose of valuation."
 
 ## FEMA / RBI Valuation Review
 
@@ -252,9 +249,3 @@ For each valuation issue, show:
 - Whether source verification is needed
 - Whether calculation verification is limited by missing workings
 - Approval required before changing document
-
-## Final Document Rule
-
-Do not insert valuation review concerns, legal cautions, source verification notes, or professional-review notes into the final document unless the user asks.
-
-Keep concerns in the review stage only.
